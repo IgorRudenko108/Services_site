@@ -864,6 +864,10 @@ h6 {
   transition: color 0.1s ease-in-out;
 }
 
+.gap-10 {
+  gap: 10px;
+}
+
 .home__inner {
   display: -ms-grid;
   display: grid;
@@ -1518,7 +1522,7 @@ h6 {
   overflow: hidden;
   border-radius: 5px;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   background-color: #F5F5F5;
 }
 
@@ -1637,6 +1641,9 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  position: relative;
+  z-index: 2;
+  background-color: #fcfbfd;
 }
 
 .btn-add__icon {
@@ -2275,7 +2282,7 @@ h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     height: calc(100vh - 160px);
-    overflow: auto;
+    overflow-y: auto;
   }
 
   .page__body--header-full {
@@ -2286,7 +2293,7 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow: auto;
+    overflow-y: auto;
     height: calc(100vh - 205px);
   }
 
@@ -2410,12 +2417,6 @@ h6 {
   .home__item--4 {
     -ms-grid-column-span: 2;
     grid-column: span 2;
-  }
-
-  .my-body__center {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 
   .my-group__content-btn {
