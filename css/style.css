@@ -216,6 +216,14 @@ h6 {
   top: 0;
 }
 
+.header--big.header._header-scroll .header-bottom {
+  position: absolute;
+  top: -120%;
+  right: 0;
+  left: 0;
+  font-size: 12px;
+}
+
 .icon-menu {
   display: none;
 }
@@ -2237,6 +2245,10 @@ h6 {
     background-color: #fff;
     padding-top: 90px;
     padding-bottom: 70px;
+  }
+
+  .page__header-big {
+    padding-top: 135px;
   }
 
   .page__header-big.p-x-null {
