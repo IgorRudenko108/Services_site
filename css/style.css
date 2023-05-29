@@ -2565,6 +2565,10 @@ h6 {
     padding: 90px 0 95px;
   }
 
+  .menu__body {
+    height: calc(100% - 90px);
+  }
+
   .footer {
     padding: 0;
   }
