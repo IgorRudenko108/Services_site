@@ -230,7 +230,7 @@ h6 {
   position: fixed;
   background: #fff;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 90px);
   top: 0;
   left: 0;
   right: 0;
@@ -1660,7 +1660,7 @@ h6 {
   gap: 10px;
   position: relative;
   z-index: 2;
-  background-color: #fcfbfd;
+  background-color: #fff;
 }
 
 .visa-extansion__item {
@@ -1709,16 +1709,6 @@ h6 {
   border: 1px solid #EEEEEE;
 }
 
-.checkbox:hover .checkbox__input:checked + .checkbox__label,
-.checkbox:hover .checkbox__input + .checkbox__label {
-  background: #E86C62;
-  border: 1px solid #EEEEEE;
-  border-radius: 5px;
-  -webkit-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-
 .checkbox__input:checked + .checkbox__label::after {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -1765,13 +1755,6 @@ h6 {
      text-overflow: ellipsis;
 }
 
-.checkbox:hover .checkbox__label-text {
-  color: #fff;
-  -webkit-transition: color 0.1s ease-in-out;
-  -o-transition: color 0.1s ease-in-out;
-  transition: color 0.1s ease-in-out;
-}
-
 .checkbox__label::before {
   content: "";
   -ms-flex-item-align: start;
@@ -1802,20 +1785,6 @@ h6 {
       -ms-transform: scale(0);
           transform: scale(0);
   margin: auto 0;
-}
-
-.checkbox:hover .checkbox__label::before {
-  border: 2px solid #fff;
-  -webkit-transition: border-color 0.1s ease-in-out;
-  -o-transition: border-color 0.1s ease-in-out;
-  transition: border-color 0.1s ease-in-out;
-}
-
-.checkbox:hover .checkbox__label::after {
-  background-color: #fff;
-  -webkit-transition: background-color 0.1s ease-in-out;
-  -o-transition: background-color 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out;
 }
 
 .header--big {
@@ -2720,6 +2689,39 @@ h6 {
       font-size: calc(1rem + 0.125 * (100vw - 35.99875rem) / 12);
     }
 }
+}
+
+@media (any-hover: hover) {
+  .checkbox:hover .checkbox__input:checked + .checkbox__label,
+  .checkbox:hover .checkbox__input + .checkbox__label {
+    background: #E86C62;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .checkbox:hover .checkbox__label-text {
+    color: #fff;
+    -webkit-transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
+  }
+
+  .checkbox:hover .checkbox__label::before {
+    border: 2px solid #fff;
+    -webkit-transition: border-color 0.1s ease-in-out;
+    -o-transition: border-color 0.1s ease-in-out;
+    transition: border-color 0.1s ease-in-out;
+  }
+
+  .checkbox:hover .checkbox__label::after {
+    background-color: #fff;
+    -webkit-transition: background-color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
+  }
 }
 
 @media (max-width: 47.99875em){
