@@ -868,6 +868,10 @@ h6 {
   gap: 10px;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .home__inner {
   display: -ms-grid;
   display: grid;
