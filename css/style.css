@@ -158,6 +158,7 @@ h6 {
   grid-template-columns: minmax(180px, 16%) 1fr;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
+  overflow-y: auto;
 }
 
 .page {
@@ -234,17 +235,11 @@ h6 {
   display: none;
 }
 
-.icon-menu:hover span,
-.icon-menu:hover::before,
-.icon-menu:hover::after {
-  background-color: #E86C62;
-}
-
 .menu__body {
   position: fixed;
   background: #fff;
   width: 100%;
-  height: calc(100% - 90px);
+  height: calc(100% - 65px);
   top: 0;
   left: 0;
   right: 0;
@@ -874,10 +869,6 @@ h6 {
 
 .gap-10 {
   gap: 10px;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
 }
 
 .overflow-x-hidden {
@@ -1633,8 +1624,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: calc(100vh - 160px);
-  overflow-y: auto;
+  height: calc(100vh + 30px);
 }
 
 .visa__row {
@@ -2114,7 +2104,7 @@ h6 {
   }
 
   .my-body__center {
-    height: 100%;
+    height: calc(100% - 35px);
   }
 
   .owner__item:hover {
@@ -2281,8 +2271,7 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: calc(100vh - 160px);
-    overflow-y: auto;
+    height: 100%;
   }
 
   .page__body--header-full {
@@ -2293,8 +2282,7 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow-y: auto;
-    height: calc(100vh - 205px);
+    height: 100%;
   }
 
   .header {
@@ -2577,14 +2565,6 @@ h6 {
     padding: 90px 0 95px;
   }
 
-  .page__body--full {
-    height: calc(100vh - 180px);
-  }
-
-  .page__body--header-full {
-    height: calc(100vh - 225px);
-  }
-
   .footer {
     padding: 0;
   }
@@ -2745,6 +2725,12 @@ h6 {
 }
 
 @media (any-hover: hover) {
+  .icon-menu:hover span,
+  .icon-menu:hover::before,
+  .icon-menu:hover::after {
+    background-color: #E86C62;
+  }
+
   .checkbox:hover .checkbox__input:checked + .checkbox__label,
   .checkbox:hover .checkbox__input + .checkbox__label {
     background: #E86C62;
