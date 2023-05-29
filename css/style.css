@@ -868,6 +868,10 @@ h6 {
   overflow-x: hidden;
 }
 
+.p-15 {
+  padding: 15px;
+}
+
 .home__inner {
   display: -ms-grid;
   display: grid;
@@ -1656,7 +1660,6 @@ h6 {
   gap: 10px;
   position: relative;
   z-index: 2;
-  background-color: #fff;
 }
 
 .visa-extansion__item {
@@ -2236,8 +2239,13 @@ h6 {
     padding-bottom: 70px;
   }
 
-  .page__header-big {
-    padding-top: 135px;
+  .page__header-big.p-x-null {
+    padding: 135px 0 90px;
+  }
+
+  .page.p-x-null {
+    background-color: #fff;
+    padding: 90px 0 70px;
   }
 
   .page__inner {
@@ -2538,6 +2546,14 @@ h6 {
 @media (max-width: 35.99875em) {
   .page {
     padding-bottom: 95px;
+  }
+
+  .page__header-big.p-x-null {
+    padding: 135px 0 95px;
+  }
+
+  .page.p-x-null {
+    padding: 90px 0 95px;
   }
 
   .page__body--full {
