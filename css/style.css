@@ -864,6 +864,10 @@ h6 {
   overflow-y: auto;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .home__inner {
   display: -ms-grid;
   display: grid;
@@ -1668,7 +1672,7 @@ h6 {
   min-width: 85px;
 }
 
-.overflow-visible {
+.overflow-y-visible {
   overflow-y: visible;
 }
 
