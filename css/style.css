@@ -726,8 +726,6 @@ h6 {
 
 .btn-purple {
   background: #251868;
-  -webkit-box-shadow: 4px 8px 24px rgba(37, 24, 104, 0.25);
-          box-shadow: 4px 8px 24px rgba(37, 24, 104, 0.25);
   -webkit-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -735,8 +733,6 @@ h6 {
 
 .btn-purple:hover {
   background: #E86C62;
-  -webkit-box-shadow: 4px 8px 24px rgba(232, 108, 98, 0.25);
-          box-shadow: 4px 8px 24px rgba(232, 108, 98, 0.25);
   -webkit-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -744,8 +740,6 @@ h6 {
 
 .btn-coral {
   background: #E86C62;
-  -webkit-box-shadow: 4px 8px 24px rgba(232, 108, 98, 0.25);
-          box-shadow: 4px 8px 24px rgba(232, 108, 98, 0.25);
   -webkit-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -753,8 +747,6 @@ h6 {
 
 .btn-coral:hover {
   background: #251868;
-  -webkit-box-shadow: 4px 8px 24px rgba(37, 24, 104, 0.25);
-          box-shadow: 4px 8px 24px rgba(37, 24, 104, 0.25);
   -webkit-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -2026,6 +2018,26 @@ h6 {
     -o-transition: fill 0.1s ease-in-out;
     transition: fill 0.1s ease-in-out;
     fill: #fff;
+  }
+
+  .btn-purple {
+    -webkit-box-shadow: 4px 8px 24px rgba(37, 24, 104, 0.25);
+            box-shadow: 4px 8px 24px rgba(37, 24, 104, 0.25);
+  }
+
+  .btn-purple:hover {
+    -webkit-box-shadow: 4px 8px 24px rgba(232, 108, 98, 0.25);
+            box-shadow: 4px 8px 24px rgba(232, 108, 98, 0.25);
+  }
+
+  .btn-coral {
+    -webkit-box-shadow: 4px 8px 24px rgba(232, 108, 98, 0.25);
+            box-shadow: 4px 8px 24px rgba(232, 108, 98, 0.25);
+  }
+
+  .btn-coral:hover {
+    -webkit-box-shadow: 4px 8px 24px rgba(37, 24, 104, 0.25);
+            box-shadow: 4px 8px 24px rgba(37, 24, 104, 0.25);
   }
 
   .home__item:hover {
